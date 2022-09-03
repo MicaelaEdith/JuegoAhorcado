@@ -1,10 +1,7 @@
-from ast import While
 import random
 import string
-from turtle import goto
 from Palabras import palabras
 from Vidas import vidas
-
 
 def traerPalabra(lista):
     palabra=random.choice(lista)
@@ -25,7 +22,7 @@ def Juego():
     abcd=set(string.ascii_uppercase)
     bandera= False
 
-    Vida=3
+    Vida=8
 
     while len(letrasPorAdivinar) > 0 and Vida > 0:
       if bandera:
@@ -69,8 +66,5 @@ def Juego():
       palabra=traerPalabra(palabras)
     else:
       break
-      
-      
-      
 
 Juego()
