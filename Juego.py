@@ -29,7 +29,7 @@ def Juego():
         print(f"Vidas disponibles: {Vida} \nLetras utilizadas: {' '.join(adivinadas)}")
 
       listaPalabras=[letra if letra in adivinadas
-      else '-' for letra in palabra] #list Comprehension (leer sobre esto, interesante)
+      else '-' for letra in palabra]
       print(vidas[Vida])
       print(f"Palabra: {' '.join(listaPalabras)}")
 
